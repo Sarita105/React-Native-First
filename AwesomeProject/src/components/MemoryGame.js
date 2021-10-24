@@ -27,8 +27,9 @@ const MemoryGame = () => {
   const flipCard = (i) => {
      setOpenedCard((opened) => [...opened, i]);
   };
-  const refreash = () => {
-    
+   const refresh = () => {
+    setOpenedCard([]);
+    setMatched([]);
   }
   useEffect(() => {
     if (openedCard.length < 2) return;
